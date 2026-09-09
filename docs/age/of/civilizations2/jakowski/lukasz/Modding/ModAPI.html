@@ -856,6 +856,14 @@ loadScripts(document, 'script');</script>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getPartySupport(age.of.civilizations2.jakowski.lukasz.Civilization,int)" class="member-name-link">getPartySupport</a><wbr>(age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;civ,
  int&nbsp;ideologyId)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getPoliticalCrisisIdeology(age.of.civilizations2.jakowski.lukasz.Civilization)" class="member-name-link">getPoliticalCrisisIdeology</a><wbr>(age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;civ)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Ideology ID pressuring civ's government, or -1 if no crisis is active -- see getIdeologyName(int).</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getPoliticalCrisisTurnsLeft(age.of.civilizations2.jakowski.lukasz.Civilization)" class="member-name-link">getPoliticalCrisisTurnsLeft</a><wbr>(age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;civ)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>float</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getPopGrowthModifier(age.of.civilizations2.jakowski.lukasz.Civilization)" class="member-name-link">getPopGrowthModifier</a><wbr>(age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;civ)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
@@ -1312,253 +1320,261 @@ loadScripts(document, 'script');</script>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isPlayerControlled(age.of.civilizations2.jakowski.lukasz.Civilization)" class="member-name-link">isPlayerControlled</a><wbr>(age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;civ)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isProvincePartOfHre(age.of.civilizations2.jakowski.lukasz.Province)" class="member-name-link">isProvincePartOfHre</a><wbr>(age.of.civilizations2.jakowski.lukasz.Province&nbsp;province)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isPoliticalCrisisActive(age.of.civilizations2.jakowski.lukasz.Civilization)" class="member-name-link">isPoliticalCrisisActive</a><wbr>(age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;civ)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isRebelsWar(int)" class="member-name-link">isRebelsWar</a><wbr>(int&nbsp;warIndex)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isProvincePartOfHre(age.of.civilizations2.jakowski.lukasz.Province)" class="member-name-link">isProvincePartOfHre</a><wbr>(age.of.civilizations2.jakowski.lukasz.Province&nbsp;province)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isRecruitAndCounterattack()" class="member-name-link">isRecruitAndCounterattack</a>()</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isRebelsWar(int)" class="member-name-link">isRebelsWar</a><wbr>(int&nbsp;warIndex)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isRival(age.of.civilizations2.jakowski.lukasz.Civilization,age.of.civilizations2.jakowski.lukasz.Civilization)" class="member-name-link">isRival</a><wbr>(age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;civ,
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isRecruitAndCounterattack()" class="member-name-link">isRecruitAndCounterattack</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isRival(age.of.civilizations2.jakowski.lukasz.Civilization,age.of.civilizations2.jakowski.lukasz.Civilization)" class="member-name-link">isRival</a><wbr>(age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;civ,
  age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;other)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isSandboxMode()" class="member-name-link">isSandboxMode</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isSandboxModeAi()" class="member-name-link">isSandboxModeAi</a>()</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isSandboxMode()" class="member-name-link">isSandboxMode</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isSpectatorMode()" class="member-name-link">isSpectatorMode</a>()</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isSandboxModeAi()" class="member-name-link">isSandboxModeAi</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isSupplied(age.of.civilizations2.jakowski.lukasz.Province)" class="member-name-link">isSupplied</a><wbr>(age.of.civilizations2.jakowski.lukasz.Province&nbsp;province)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isSpectatorMode()" class="member-name-link">isSpectatorMode</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isTotalWarMode()" class="member-name-link">isTotalWarMode</a>()</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isSupplied(age.of.civilizations2.jakowski.lukasz.Province)" class="member-name-link">isSupplied</a><wbr>(age.of.civilizations2.jakowski.lukasz.Province&nbsp;province)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isTribalReligion(int)" class="member-name-link">isTribalReligion</a><wbr>(int&nbsp;religionId)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isTotalWarMode()" class="member-name-link">isTotalWarMode</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isUraniumScarcityEnabled()" class="member-name-link">isUraniumScarcityEnabled</a>()</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isTribalReligion(int)" class="member-name-link">isTribalReligion</a><wbr>(int&nbsp;religionId)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isWasteland(age.of.civilizations2.jakowski.lukasz.Province)" class="member-name-link">isWasteland</a><wbr>(age.of.civilizations2.jakowski.lukasz.Province&nbsp;province)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isUraniumScarcityEnabled()" class="member-name-link">isUraniumScarcityEnabled</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isWonderBuilt(age.of.civilizations2.jakowski.lukasz.Province)" class="member-name-link">isWonderBuilt</a><wbr>(age.of.civilizations2.jakowski.lukasz.Province&nbsp;province)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isWasteland(age.of.civilizations2.jakowski.lukasz.Province)" class="member-name-link">isWasteland</a><wbr>(age.of.civilizations2.jakowski.lukasz.Province&nbsp;province)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#joinAlliance(age.of.civilizations2.jakowski.lukasz.Alliance,age.of.civilizations2.jakowski.lukasz.Civilization)" class="member-name-link">joinAlliance</a><wbr>(age.of.civilizations2.jakowski.lukasz.Alliance&nbsp;alliance,
- age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;civ)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#leaderTraitCount()" class="member-name-link">leaderTraitCount</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#leaveAlliance(age.of.civilizations2.jakowski.lukasz.Alliance,age.of.civilizations2.jakowski.lukasz.Civilization)" class="member-name-link">leaveAlliance</a><wbr>(age.of.civilizations2.jakowski.lukasz.Alliance&nbsp;alliance,
- age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;civ)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#loanCount(age.of.civilizations2.jakowski.lukasz.Civilization)" class="member-name-link">loanCount</a><wbr>(age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;civ)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#log(java.lang.Object)" class="member-name-link">log</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&nbsp;message)</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isWonderBuilt(age.of.civilizations2.jakowski.lukasz.Province)" class="member-name-link">isWonderBuilt</a><wbr>(age.of.civilizations2.jakowski.lukasz.Province&nbsp;province)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#makePeace(age.of.civilizations2.jakowski.lukasz.Civilization,age.of.civilizations2.jakowski.lukasz.Civilization,int)" class="member-name-link">makePeace</a><wbr>(age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;civA,
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#joinAlliance(age.of.civilizations2.jakowski.lukasz.Alliance,age.of.civilizations2.jakowski.lukasz.Civilization)" class="member-name-link">joinAlliance</a><wbr>(age.of.civilizations2.jakowski.lukasz.Alliance&nbsp;alliance,
+ age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;civ)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#leaderTraitCount()" class="member-name-link">leaderTraitCount</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#leaveAlliance(age.of.civilizations2.jakowski.lukasz.Alliance,age.of.civilizations2.jakowski.lukasz.Civilization)" class="member-name-link">leaveAlliance</a><wbr>(age.of.civilizations2.jakowski.lukasz.Alliance&nbsp;alliance,
+ age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;civ)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#loanCount(age.of.civilizations2.jakowski.lukasz.Civilization)" class="member-name-link">loanCount</a><wbr>(age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;civ)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#log(java.lang.Object)" class="member-name-link">log</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&nbsp;message)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#makePeace(age.of.civilizations2.jakowski.lukasz.Civilization,age.of.civilizations2.jakowski.lukasz.Civilization,int)" class="member-name-link">makePeace</a><wbr>(age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;civA,
  age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;civB,
  int&nbsp;truceTurns)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#makeWhitePeace(age.of.civilizations2.jakowski.lukasz.Civilization,age.of.civilizations2.jakowski.lukasz.Civilization)" class="member-name-link">makeWhitePeace</a><wbr>(age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;civA,
- age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;civB)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#markEventDecisionTaken(age.of.civilizations2.jakowski.lukasz.Civilization,java.lang.String)" class="member-name-link">markEventDecisionTaken</a><wbr>(age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;civ,
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#makeWhitePeace(age.of.civilizations2.jakowski.lukasz.Civilization,age.of.civilizations2.jakowski.lukasz.Civilization)" class="member-name-link">makeWhitePeace</a><wbr>(age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;civA,
+ age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;civB)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#markEventDecisionTaken(age.of.civilizations2.jakowski.lukasz.Civilization,java.lang.String)" class="member-name-link">markEventDecisionTaken</a><wbr>(age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;civ,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;eventDecisionTag)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#massConstruct(java.lang.String,age.of.civilizations2.jakowski.lukasz.Civilization)" class="member-name-link">massConstruct</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;buildingType,
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#massConstruct(java.lang.String,age.of.civilizations2.jakowski.lukasz.Civilization)" class="member-name-link">massConstruct</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;buildingType,
  age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;civ)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#mercenaryArmyCost(age.of.civilizations2.jakowski.lukasz.Civilization,int)" class="member-name-link">mercenaryArmyCost</a><wbr>(age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;civ,
- int&nbsp;index)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#mercenaryArmyCount(age.of.civilizations2.jakowski.lukasz.Civilization)" class="member-name-link">mercenaryArmyCount</a><wbr>(age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;civ)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#mercenaryArmyFromCivId(age.of.civilizations2.jakowski.lukasz.Civilization,int)" class="member-name-link">mercenaryArmyFromCivId</a><wbr>(age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;civ,
- int&nbsp;index)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#mercenaryArmyUnits(age.of.civilizations2.jakowski.lukasz.Civilization,int)" class="member-name-link">mercenaryArmyUnits</a><wbr>(age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;civ,
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#mercenaryArmyCost(age.of.civilizations2.jakowski.lukasz.Civilization,int)" class="member-name-link">mercenaryArmyCost</a><wbr>(age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;civ,
  int&nbsp;index)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#migrationCount(age.of.civilizations2.jakowski.lukasz.Civilization)" class="member-name-link">migrationCount</a><wbr>(age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;civ)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#mercenaryArmyCount(age.of.civilizations2.jakowski.lukasz.Civilization)" class="member-name-link">mercenaryArmyCount</a><wbr>(age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;civ)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#minArmyRequiredToAttack()" class="member-name-link">minArmyRequiredToAttack</a>()</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#mercenaryArmyFromCivId(age.of.civilizations2.jakowski.lukasz.Civilization,int)" class="member-name-link">mercenaryArmyFromCivId</a><wbr>(age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;civ,
+ int&nbsp;index)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#month()" class="member-name-link">month</a>()</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#mercenaryArmyUnits(age.of.civilizations2.jakowski.lukasz.Civilization,int)" class="member-name-link">mercenaryArmyUnits</a><wbr>(age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;civ,
+ int&nbsp;index)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#moveArmy(age.of.civilizations2.jakowski.lukasz.Province,age.of.civilizations2.jakowski.lukasz.Province,int,age.of.civilizations2.jakowski.lukasz.Civilization)" class="member-name-link">moveArmy</a><wbr>(age.of.civilizations2.jakowski.lukasz.Province&nbsp;from,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#migrationCount(age.of.civilizations2.jakowski.lukasz.Civilization)" class="member-name-link">migrationCount</a><wbr>(age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;civ)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#minArmyRequiredToAttack()" class="member-name-link">minArmyRequiredToAttack</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#month()" class="member-name-link">month</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#moveArmy(age.of.civilizations2.jakowski.lukasz.Province,age.of.civilizations2.jakowski.lukasz.Province,int,age.of.civilizations2.jakowski.lukasz.Civilization)" class="member-name-link">moveArmy</a><wbr>(age.of.civilizations2.jakowski.lukasz.Province&nbsp;from,
  age.of.civilizations2.jakowski.lukasz.Province&nbsp;to,
  int&nbsp;units,
  age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;civ)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#movementPointsExtra()" class="member-name-link">movementPointsExtra</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>float</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#movementPointsMaxModifier()" class="member-name-link">movementPointsMaxModifier</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#nationalityCivIdAt(age.of.civilizations2.jakowski.lukasz.Province,int)" class="member-name-link">nationalityCivIdAt</a><wbr>(age.of.civilizations2.jakowski.lukasz.Province&nbsp;province,
- int&nbsp;index)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#nationalityCount(age.of.civilizations2.jakowski.lukasz.Province)" class="member-name-link">nationalityCount</a><wbr>(age.of.civilizations2.jakowski.lukasz.Province&nbsp;province)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#movementPointsExtra()" class="member-name-link">movementPointsExtra</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>float</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#movementPointsMaxModifier()" class="member-name-link">movementPointsMaxModifier</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#nationalityCivIdAt(age.of.civilizations2.jakowski.lukasz.Province,int)" class="member-name-link">nationalityCivIdAt</a><wbr>(age.of.civilizations2.jakowski.lukasz.Province&nbsp;province,
+ int&nbsp;index)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#nationalityPopulationAt(age.of.civilizations2.jakowski.lukasz.Province,int)" class="member-name-link">nationalityPopulationAt</a><wbr>(age.of.civilizations2.jakowski.lukasz.Province&nbsp;province,
- int&nbsp;index)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#nationalityCount(age.of.civilizations2.jakowski.lukasz.Province)" class="member-name-link">nationalityCount</a><wbr>(age.of.civilizations2.jakowski.lukasz.Province&nbsp;province)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>float</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#nukesRequiredTechLevel()" class="member-name-link">nukesRequiredTechLevel</a>()</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#nationalityPopulationAt(age.of.civilizations2.jakowski.lukasz.Province,int)" class="member-name-link">nationalityPopulationAt</a><wbr>(age.of.civilizations2.jakowski.lukasz.Province&nbsp;province,
+ int&nbsp;index)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#organizeFestival(age.of.civilizations2.jakowski.lukasz.Civilization,age.of.civilizations2.jakowski.lukasz.Province)" class="member-name-link">organizeFestival</a><wbr>(age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;civ,
- age.of.civilizations2.jakowski.lukasz.Province&nbsp;province)</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>float</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#nukesRequiredTechLevel()" class="member-name-link">nukesRequiredTechLevel</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#organizeFestivalFree(age.of.civilizations2.jakowski.lukasz.Civilization,age.of.civilizations2.jakowski.lukasz.Province)" class="member-name-link">organizeFestivalFree</a><wbr>(age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;civ,
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#organizeFestival(age.of.civilizations2.jakowski.lukasz.Civilization,age.of.civilizations2.jakowski.lukasz.Province)" class="member-name-link">organizeFestival</a><wbr>(age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;civ,
  age.of.civilizations2.jakowski.lukasz.Province&nbsp;province)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>float</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#peaceTreatyVictoryPointsModifier()" class="member-name-link">peaceTreatyVictoryPointsModifier</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>age.of.civilizations2.jakowski.lukasz.Civilization</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#playerCiv()" class="member-name-link">playerCiv</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>float</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#plunderEfficiency(age.of.civilizations2.jakowski.lukasz.Civilization,age.of.civilizations2.jakowski.lukasz.Province,int)" class="member-name-link">plunderEfficiency</a><wbr>(age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;civ,
- age.of.civilizations2.jakowski.lukasz.Province&nbsp;province,
- int&nbsp;army)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#plunderIncome(age.of.civilizations2.jakowski.lukasz.Civilization,age.of.civilizations2.jakowski.lukasz.Province,int)" class="member-name-link">plunderIncome</a><wbr>(age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;civ,
- age.of.civilizations2.jakowski.lukasz.Province&nbsp;province,
- int&nbsp;army)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>float</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#plunderModifier()" class="member-name-link">plunderModifier</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#plunderProvince(age.of.civilizations2.jakowski.lukasz.Civilization,age.of.civilizations2.jakowski.lukasz.Province,int)" class="member-name-link">plunderProvince</a><wbr>(age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;civ,
- age.of.civilizations2.jakowski.lukasz.Province&nbsp;province,
- int&nbsp;army)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#plunderTreasuryIncome(age.of.civilizations2.jakowski.lukasz.Civilization,age.of.civilizations2.jakowski.lukasz.Province,int)" class="member-name-link">plunderTreasuryIncome</a><wbr>(age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;civ,
- age.of.civilizations2.jakowski.lukasz.Province&nbsp;province,
- int&nbsp;army)</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#organizeFestivalFree(age.of.civilizations2.jakowski.lukasz.Civilization,age.of.civilizations2.jakowski.lukasz.Province)" class="member-name-link">organizeFestivalFree</a><wbr>(age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;civ,
+ age.of.civilizations2.jakowski.lukasz.Province&nbsp;province)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>float</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#populationGrowthRate()" class="member-name-link">populationGrowthRate</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#proposeAllianceChance()" class="member-name-link">proposeAllianceChance</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#proposeDynasticUnion(age.of.civilizations2.jakowski.lukasz.Civilization,age.of.civilizations2.jakowski.lukasz.Civilization)" class="member-name-link">proposeDynasticUnion</a><wbr>(age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;from,
- age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;to)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>age.of.civilizations2.jakowski.lukasz.Province</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#province(int)" class="member-name-link">province</a><wbr>(int&nbsp;provinceId)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#provinceCount()" class="member-name-link">provinceCount</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#provokeRebels(age.of.civilizations2.jakowski.lukasz.Civilization,age.of.civilizations2.jakowski.lukasz.Civilization)" class="member-name-link">provokeRebels</a><wbr>(age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;onCiv,
- age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;rebelsCiv)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#randomChance(float)" class="member-name-link">randomChance</a><wbr>(float&nbsp;probability)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#peaceTreatyVictoryPointsModifier()" class="member-name-link">peaceTreatyVictoryPointsModifier</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>age.of.civilizations2.jakowski.lukasz.Civilization</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#randomCiv()" class="member-name-link">randomCiv</a>()</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#playerCiv()" class="member-name-link">playerCiv</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>float</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#randomFloat()" class="member-name-link">randomFloat</a>()</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#plunderEfficiency(age.of.civilizations2.jakowski.lukasz.Civilization,age.of.civilizations2.jakowski.lukasz.Province,int)" class="member-name-link">plunderEfficiency</a><wbr>(age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;civ,
+ age.of.civilizations2.jakowski.lukasz.Province&nbsp;province,
+ int&nbsp;army)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#randomInt(int)" class="member-name-link">randomInt</a><wbr>(int&nbsp;bound)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#plunderIncome(age.of.civilizations2.jakowski.lukasz.Civilization,age.of.civilizations2.jakowski.lukasz.Province,int)" class="member-name-link">plunderIncome</a><wbr>(age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;civ,
+ age.of.civilizations2.jakowski.lukasz.Province&nbsp;province,
+ int&nbsp;army)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>age.of.civilizations2.jakowski.lukasz.Province</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#randomProvince()" class="member-name-link">randomProvince</a>()</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>float</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#plunderModifier()" class="member-name-link">plunderModifier</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#plunderProvince(age.of.civilizations2.jakowski.lukasz.Civilization,age.of.civilizations2.jakowski.lukasz.Province,int)" class="member-name-link">plunderProvince</a><wbr>(age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;civ,
+ age.of.civilizations2.jakowski.lukasz.Province&nbsp;province,
+ int&nbsp;army)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#plunderTreasuryIncome(age.of.civilizations2.jakowski.lukasz.Civilization,age.of.civilizations2.jakowski.lukasz.Province,int)" class="member-name-link">plunderTreasuryIncome</a><wbr>(age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;civ,
+ age.of.civilizations2.jakowski.lukasz.Province&nbsp;province,
+ int&nbsp;army)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>float</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#rebelsPower()" class="member-name-link">rebelsPower</a>()</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#populationGrowthRate()" class="member-name-link">populationGrowthRate</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#recruitArmy(age.of.civilizations2.jakowski.lukasz.Province,age.of.civilizations2.jakowski.lukasz.Civilization,int)" class="member-name-link">recruitArmy</a><wbr>(age.of.civilizations2.jakowski.lukasz.Province&nbsp;province,
- age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;civ,
- int&nbsp;units)</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#proposeAllianceChance()" class="member-name-link">proposeAllianceChance</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#proposeDynasticUnion(age.of.civilizations2.jakowski.lukasz.Civilization,age.of.civilizations2.jakowski.lukasz.Civilization)" class="member-name-link">proposeDynasticUnion</a><wbr>(age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;from,
+ age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;to)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>age.of.civilizations2.jakowski.lukasz.Province</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#province(int)" class="member-name-link">province</a><wbr>(int&nbsp;provinceId)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#provinceCount()" class="member-name-link">provinceCount</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#provokeRebels(age.of.civilizations2.jakowski.lukasz.Civilization,age.of.civilizations2.jakowski.lukasz.Civilization)" class="member-name-link">provokeRebels</a><wbr>(age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;onCiv,
+ age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;rebelsCiv)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#recruitGarrison(age.of.civilizations2.jakowski.lukasz.Province,int)" class="member-name-link">recruitGarrison</a><wbr>(age.of.civilizations2.jakowski.lukasz.Province&nbsp;province,
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#randomChance(float)" class="member-name-link">randomChance</a><wbr>(float&nbsp;probability)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>age.of.civilizations2.jakowski.lukasz.Civilization</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#randomCiv()" class="member-name-link">randomCiv</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>float</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#randomFloat()" class="member-name-link">randomFloat</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#randomInt(int)" class="member-name-link">randomInt</a><wbr>(int&nbsp;bound)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>age.of.civilizations2.jakowski.lukasz.Province</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#randomProvince()" class="member-name-link">randomProvince</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>float</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#rebelsPower()" class="member-name-link">rebelsPower</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#recruitArmy(age.of.civilizations2.jakowski.lukasz.Province,age.of.civilizations2.jakowski.lukasz.Civilization,int)" class="member-name-link">recruitArmy</a><wbr>(age.of.civilizations2.jakowski.lukasz.Province&nbsp;province,
+ age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;civ,
+ int&nbsp;units)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#recruitGarrison(age.of.civilizations2.jakowski.lukasz.Province,int)" class="member-name-link">recruitGarrison</a><wbr>(age.of.civilizations2.jakowski.lukasz.Province&nbsp;province,
  int&nbsp;numUnits)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Pays gold + movement points from the province owner and adds to its garrison.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>age.of.civilizations2.jakowski.lukasz.Civilization</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#releaseVassal(age.of.civilizations2.jakowski.lukasz.Civilization,java.lang.String,java.util.List,int)" class="member-name-link">releaseVassal</a><wbr>(age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;overlord,
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>age.of.civilizations2.jakowski.lukasz.Civilization</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#releaseVassal(age.of.civilizations2.jakowski.lukasz.Civilization,java.lang.String,java.util.List,int)" class="member-name-link">releaseVassal</a><wbr>(age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;overlord,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;vassalTag,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;&nbsp;provinces,
  int&nbsp;capitalProvinceId)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#religionCount()" class="member-name-link">religionCount</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#reloadGameValues()" class="member-name-link">reloadGameValues</a>()</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#religionCount()" class="member-name-link">religionCount</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#removeCore(age.of.civilizations2.jakowski.lukasz.Province,age.of.civilizations2.jakowski.lukasz.Civilization)" class="member-name-link">removeCore</a><wbr>(age.of.civilizations2.jakowski.lukasz.Province&nbsp;province,
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#reloadGameValues()" class="member-name-link">reloadGameValues</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#removeCore(age.of.civilizations2.jakowski.lukasz.Province,age.of.civilizations2.jakowski.lukasz.Civilization)" class="member-name-link">removeCore</a><wbr>(age.of.civilizations2.jakowski.lukasz.Province&nbsp;province,
  age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;civ)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#removeFriendlyCiv(age.of.civilizations2.jakowski.lukasz.Civilization,age.of.civilizations2.jakowski.lukasz.Civilization)" class="member-name-link">removeFriendlyCiv</a><wbr>(age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;civ,
+ age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;other)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#removeFriendlyCiv(age.of.civilizations2.jakowski.lukasz.Civilization,age.of.civilizations2.jakowski.lukasz.Civilization)" class="member-name-link">removeFriendlyCiv</a><wbr>(age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;civ,
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#removeHatedCiv(age.of.civilizations2.jakowski.lukasz.Civilization,age.of.civilizations2.jakowski.lukasz.Civilization)" class="member-name-link">removeHatedCiv</a><wbr>(age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;civ,
  age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;other)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#removeHatedCiv(age.of.civilizations2.jakowski.lukasz.Civilization,age.of.civilizations2.jakowski.lukasz.Civilization)" class="member-name-link">removeHatedCiv</a><wbr>(age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;civ,
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#removeLoan(age.of.civilizations2.jakowski.lukasz.Civilization,int)" class="member-name-link">removeLoan</a><wbr>(age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;civ,
+ int&nbsp;index)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#removeProvinceFromHre(age.of.civilizations2.jakowski.lukasz.Province)" class="member-name-link">removeProvinceFromHre</a><wbr>(age.of.civilizations2.jakowski.lukasz.Province&nbsp;province)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#reopenEmbassy(age.of.civilizations2.jakowski.lukasz.Civilization,age.of.civilizations2.jakowski.lukasz.Civilization)" class="member-name-link">reopenEmbassy</a><wbr>(age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;civ,
  age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;other)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#removeLoan(age.of.civilizations2.jakowski.lukasz.Civilization,int)" class="member-name-link">removeLoan</a><wbr>(age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;civ,
- int&nbsp;index)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#resetAllAchievements()" class="member-name-link">resetAllAchievements</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#removeProvinceFromHre(age.of.civilizations2.jakowski.lukasz.Province)" class="member-name-link">removeProvinceFromHre</a><wbr>(age.of.civilizations2.jakowski.lukasz.Province&nbsp;province)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#reopenEmbassy(age.of.civilizations2.jakowski.lukasz.Civilization,age.of.civilizations2.jakowski.lukasz.Civilization)" class="member-name-link">reopenEmbassy</a><wbr>(age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;civ,
- age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;other)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#resetAllAchievements()" class="member-name-link">resetAllAchievements</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#resolvePoliticalCrisis(age.of.civilizations2.jakowski.lukasz.Civilization)" class="member-name-link">resolvePoliticalCrisis</a><wbr>(age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;civ)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Peacefully switches civ's government to the pressuring ideology (stability/happiness cost applies).</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#revokeMilitaryAccess(age.of.civilizations2.jakowski.lukasz.Civilization,age.of.civilizations2.jakowski.lukasz.Civilization)" class="member-name-link">revokeMilitaryAccess</a><wbr>(age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;grantor,
  age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;grantee)</code></div>
@@ -5091,6 +5107,32 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="isGovernmentHungParliament(age.of.civilizations2.jakowski.lukasz.Civilization)">
 <h3>isGovernmentHungParliament</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isGovernmentHungParliament</span><wbr><span class="parameters">(age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;civ)</span></div>
+</section>
+</li>
+<li>
+<section class="detail" id="isPoliticalCrisisActive(age.of.civilizations2.jakowski.lukasz.Civilization)">
+<h3>isPoliticalCrisisActive</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isPoliticalCrisisActive</span><wbr><span class="parameters">(age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;civ)</span></div>
+</section>
+</li>
+<li>
+<section class="detail" id="getPoliticalCrisisIdeology(age.of.civilizations2.jakowski.lukasz.Civilization)">
+<h3>getPoliticalCrisisIdeology</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">getPoliticalCrisisIdeology</span><wbr><span class="parameters">(age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;civ)</span></div>
+<div class="block">Ideology ID pressuring civ's government, or -1 if no crisis is active -- see getIdeologyName(int).</div>
+</section>
+</li>
+<li>
+<section class="detail" id="getPoliticalCrisisTurnsLeft(age.of.civilizations2.jakowski.lukasz.Civilization)">
+<h3>getPoliticalCrisisTurnsLeft</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">getPoliticalCrisisTurnsLeft</span><wbr><span class="parameters">(age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;civ)</span></div>
+</section>
+</li>
+<li>
+<section class="detail" id="resolvePoliticalCrisis(age.of.civilizations2.jakowski.lukasz.Civilization)">
+<h3>resolvePoliticalCrisis</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">resolvePoliticalCrisis</span><wbr><span class="parameters">(age.of.civilizations2.jakowski.lukasz.Civilization&nbsp;civ)</span></div>
+<div class="block">Peacefully switches civ's government to the pressuring ideology (stability/happiness cost applies). Returns false if there's no active crisis.</div>
 </section>
 </li>
 <li>

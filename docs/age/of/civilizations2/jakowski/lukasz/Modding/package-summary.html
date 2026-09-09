@@ -95,6 +95,14 @@ loadScripts(document, 'script');</script>
 <div class="col-last even-row-color class-summary class-summary-tab2">&nbsp;</div>
 <div class="col-first odd-row-color class-summary class-summary-tab2"><a href="ModManifest.html" title="class in age.of.civilizations2.jakowski.lukasz.Modding">ModManifest</a></div>
 <div class="col-last odd-row-color class-summary class-summary-tab2">&nbsp;</div>
+<div class="col-first even-row-color class-summary class-summary-tab2"><a href="ModZipExtractor.html" title="class in age.of.civilizations2.jakowski.lukasz.Modding">ModZipExtractor</a></div>
+<div class="col-last even-row-color class-summary class-summary-tab2">
+<div class="block">Unpacks a .zip-packaged mod (ModLoader.loadAll()'s mods/*.zip scan) into a real folder on disk
+ under mods/.zip_extracted/, so it can be loaded through the exact same modFolder-based path as
+ an already-unpacked mod -- GroovyShell.evaluate(File) needs a real File, and a mod's own
+ ModContext.folder is a plain filesystem path mods may read further resources from, so nothing
+ downstream needs to know or care that the mod originally came from a zip.</div>
+</div>
 </div>
 </div>
 </div>

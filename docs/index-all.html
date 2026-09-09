@@ -329,6 +329,13 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="age/of/civilizations2/jakowski/lukasz/Modding/ModAPI.html#executeConsoleCommand(java.lang.String)" class="member-name-link">executeConsoleCommand(String)</a> - Method in class age.of.civilizations2.jakowski.lukasz.Modding.<a href="age/of/civilizations2/jakowski/lukasz/Modding/ModAPI.html" title="class in age.of.civilizations2.jakowski.lukasz.Modding">ModAPI</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="age/of/civilizations2/jakowski/lukasz/Modding/ModZipExtractor.html#extractIfStale(java.io.File,java.io.File)" class="member-name-link">extractIfStale(File, File)</a> - Static method in class age.of.civilizations2.jakowski.lukasz.Modding.<a href="age/of/civilizations2/jakowski/lukasz/Modding/ModZipExtractor.html" title="class in age.of.civilizations2.jakowski.lukasz.Modding">ModZipExtractor</a></dt>
+<dd>
+<div class="block">Extracts zipFile into destDir, but ONLY if zipFile's own last-modified time doesn't match
+ what's recorded from the last extraction (a marker file inside destDir, not the zip itself --
+ zip file mtimes on disk are perfectly fine for this, unlike the deliberately-unreliable
+ per-entry mtimes some zip tools write).</div>
+</dd>
 </dl>
 <h2 class="title" id="I:F">F</h2>
 <dl class="index">
@@ -1098,6 +1105,14 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="age/of/civilizations2/jakowski/lukasz/Modding/ModEvent.html#MODS_LOADED" class="member-name-link">MODS_LOADED</a> - Enum constant in enum class age.of.civilizations2.jakowski.lukasz.Modding.<a href="age/of/civilizations2/jakowski/lukasz/Modding/ModEvent.html" title="enum class in age.of.civilizations2.jakowski.lukasz.Modding">ModEvent</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="age/of/civilizations2/jakowski/lukasz/Modding/ModZipExtractor.html" class="type-name-link" title="class in age.of.civilizations2.jakowski.lukasz.Modding">ModZipExtractor</a> - Class in <a href="age/of/civilizations2/jakowski/lukasz/Modding/package-summary.html">age.of.civilizations2.jakowski.lukasz.Modding</a></dt>
+<dd>
+<div class="block">Unpacks a .zip-packaged mod (ModLoader.loadAll()'s mods/*.zip scan) into a real folder on disk
+ under mods/.zip_extracted/, so it can be loaded through the exact same modFolder-based path as
+ an already-unpacked mod -- GroovyShell.evaluate(File) needs a real File, and a mod's own
+ ModContext.folder is a plain filesystem path mods may read further resources from, so nothing
+ downstream needs to know or care that the mod originally came from a zip.</div>
+</dd>
 <dt><a href="age/of/civilizations2/jakowski/lukasz/Modding/ModAPI.html#month()" class="member-name-link">month()</a> - Method in class age.of.civilizations2.jakowski.lukasz.Modding.<a href="age/of/civilizations2/jakowski/lukasz/Modding/ModAPI.html" title="class in age.of.civilizations2.jakowski.lukasz.Modding">ModAPI</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="age/of/civilizations2/jakowski/lukasz/Modding/ModEvent.html#MONTH_CHANGED" class="member-name-link">MONTH_CHANGED</a> - Enum constant in enum class age.of.civilizations2.jakowski.lukasz.Modding.<a href="age/of/civilizations2/jakowski/lukasz/Modding/ModEvent.html" title="enum class in age.of.civilizations2.jakowski.lukasz.Modding">ModEvent</a></dt>

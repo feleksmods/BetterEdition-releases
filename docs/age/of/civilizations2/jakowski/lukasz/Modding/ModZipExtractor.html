@@ -76,11 +76,6 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="type-signature"><span class="modifiers">public final class </span><span class="element-name type-name-label">ModZipExtractor</span>
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></span></div>
-<div class="block">Unpacks a .zip-packaged mod (ModLoader.loadAll()'s mods/*.zip scan) into a real folder on disk
- under mods/.zip_extracted/, so it can be loaded through the exact same modFolder-based path as
- an already-unpacked mod -- GroovyShell.evaluate(File) needs a real File, and a mod's own
- ModContext.folder is a plain filesystem path mods may read further resources from, so nothing
- downstream needs to know or care that the mod originally came from a zip.</div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -98,12 +93,7 @@ loadScripts(document, 'script');</script>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static boolean</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#extractIfStale(java.io.File,java.io.File)" class="member-name-link">extractIfStale</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/File.html" title="class or interface in java.io" class="external-link">File</a>&nbsp;zipFile,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/File.html" title="class or interface in java.io" class="external-link">File</a>&nbsp;destDir)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
-<div class="block">Extracts zipFile into destDir, but ONLY if zipFile's own last-modified time doesn't match
- what's recorded from the last extraction (a marker file inside destDir, not the zip itself --
- zip file mtimes on disk are perfectly fine for this, unlike the deliberately-unreliable
- per-entry mtimes some zip tools write).</div>
-</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
 </div>
 </div>
 </div>
@@ -126,24 +116,6 @@ loadScripts(document, 'script');</script>
 <h3>extractIfStale</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">extractIfStale</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/File.html" title="class or interface in java.io" class="external-link">File</a>&nbsp;zipFile,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/File.html" title="class or interface in java.io" class="external-link">File</a>&nbsp;destDir)</span></div>
-<div class="block">Extracts zipFile into destDir, but ONLY if zipFile's own last-modified time doesn't match
- what's recorded from the last extraction (a marker file inside destDir, not the zip itself --
- zip file mtimes on disk are perfectly fine for this, unlike the deliberately-unreliable
- per-entry mtimes some zip tools write). This matters for more than avoiding pointless re-work
- on every mod reload: ModLoader.setModEnabled() persists the enabled/disabled toggle by
- rewriting mod.json inside whatever folder a LoadedMod actually lives in -- for a zip mod
- that's this extracted copy, and unconditionally wiping+re-extracting on every reload would
- silently discard that toggle the moment the mod list refreshes. Replacing the .zip with a
- genuinely newer one (different mtime) intentionally re-extracts fresh and drops any local
- override, the same way dropping a fresh copy over an existing unpacked mod folder would.
-
- Also unwraps a single top-level wrapper folder if the zip's real content sits one level
- deep inside it (mod.json not found directly at the zip root, but exactly one subfolder is)
- -- the shape produced by "right-click > Compress" on a mod's own folder, or GitHub's
- "Download ZIP", both extremely likely ways someone actually produces one of these.
-
- Returns true if destDir is ready to load from (freshly extracted, or already up to date),
- false if extraction failed and destDir should not be treated as a valid mod folder.</div>
 </section>
 </li>
 </ul>
